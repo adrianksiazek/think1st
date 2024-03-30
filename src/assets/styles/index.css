@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-tertiary-light hover:bg-tertiary-dark px-4 py-2 rounded-[4px] font-semibold disabled:bg-secondary disabled:cursor-not-allowed transition duration-200 flex items-center justify-center gap-2.5;
+  }
+  .form-control {
+    @apply rounded-[8px] px-4 py-3 bg-white relative text-black focus:bg-[#FAF9FA] focus:ring-tertiary-light focus:border-tertiary-light placeholder:text-gray-600 placeholder:text-lg border border-solid border-secondary focus:outline-none focus:ring-1 disabled:bg-gray-200 disabled:cursor-not-allowed disabled:text-gray-400 placeholder:disabled:text-gray-400;
+  }
+  .label {
+    @apply text-black text-base mb-1 inline-block;
+  }
+  .heading {
+    @apply text-black text-2xl font-medium mb-5;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f0eaf8;
+}
